@@ -89,7 +89,7 @@ export const portfolio = [
     details:
       "A streaming music service featuring an audio player, song library, search page, and individual song details page.",
     img: "/images/portfolio/MusicService.png",
-    link: "https://musicservice-5dff.onrender.com",
+    link: "https://music-service-viktoryiavysots.replit.app",
     github: "https://github.com/Viktoryia-Vysotskaya/MusicService",
   },
   {
@@ -100,7 +100,7 @@ export const portfolio = [
     details:
       "A web application for a pizzeria that allows customers to place orders for their favorite dishes and reserve tables.",
     img: "/images/portfolio/Pizzeria.png",
-    link: "https://project-pizzeria-v2n2.onrender.com",
+    link: "https://project-pizzeria-viktoryiavysots.replit.app",
     github: "https://github.com/Viktoryia-Vysotskaya/Project-pizzeria",
   },
   {
@@ -122,6 +122,7 @@ export const portfolio = [
     details:
       "A web application designed for waiters to manage tables in a restaurant. Users can track the status of each table (occupied, available, reserved), the number of guests at each table, and also manage the status of the tables (e.g., marking tables as occupied or available). Additionally, the application can provide information about the current bill for each table.",
     img: "/images/portfolio/Waiter.png",
+    link: "https://waiter-app-viktoryiavysots.replit.app",
     github: "https://github.com/Viktoryia-Vysotskaya/WaiterApp",
   },
   {
@@ -155,6 +156,7 @@ export const portfolio = [
     details:
       "A simple chat allowing users to communicate in real-time using websockets.",
     img: "/images/portfolio/Chat.png",
+    link: "https://web-socket-app-chat-viktoryiavysots.replit.app",
     github: "https://github.com/Viktoryia-Vysotskaya/WebSocketApp-Chat",
   },
   {
@@ -165,6 +167,7 @@ export const portfolio = [
     details:
       "A web application that functions as a concert schedule, providing users with the ability to view available concerts, their descriptions, dates, and venues. Additionally, users can reserve or purchase tickets for their chosen concert directly through the application.",
     img: "/images/portfolio/RestAPI-DataBase.png",
+    link: "https://rest-api-data-base-viktoryiavysots.replit.app",
     github: "https://github.com/Viktoryia-Vysotskaya/RestAPI-DataBase",
   },
 
@@ -176,6 +179,7 @@ export const portfolio = [
     details:
       "A web page for creating and posting advertisements. Registration and login functions are implemented for managing one's own advertisements. Information about contacts, description, photos, price, and location. Features include viewing others' advertisements, as well as editing and deleting one's own.",
     img: "/images/portfolio/NoticeBoard.png",
+    link: "https://notice-board-full-stack-viktoryiavysots.replit.app",
     github: "https://github.com/Viktoryia-Vysotskaya/NoticeBoard-FullStack",
   },
 
