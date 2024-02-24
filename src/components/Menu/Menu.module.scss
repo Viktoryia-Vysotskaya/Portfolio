@@ -1,0 +1,92 @@
+@import "../../styles/styles.scss";
+
+.menu {
+  width: 250px;
+  height: 100vh;
+  background-color: $color-main;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+  border: 2px solid $color-dark;
+
+  ul {
+    background-color: $color-main;
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+    font-size: 30px;
+    color: $color-dark;
+    width: 80%;
+
+    li {
+      margin-bottom: 40px;
+      margin-left: 20px;
+      background-color: $color-main;
+
+      span {
+        position: absolute;
+        background-color: $color-main;
+        transform: translateY(-40%);
+      }
+
+      svg {
+        font-size: 14px;
+        background-color: $color-main;
+        color: $color-red-one;
+        margin-right: 3px;
+      }
+
+      a {
+        font-size: 30px;
+        color: inherit;
+        text-decoration: none;
+        margin-top: 40px;
+        padding-left: 16px;
+        background-color: $color-main;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .icons {
+    width: 70%;
+    cursor: pointer;
+    background-color: $color-main;
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    color: $color-main;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    a {
+      background-color: $color-main;
+    }
+
+    .icon {
+      margin-right: 10px;
+      color: $color-dark;
+      background-color: $color-main;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &.active {
+    right: 0;
+  }
+}
+
+// Media queries

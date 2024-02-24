@@ -1,0 +1,124 @@
+@import "../../styles/styles.scss";
+
+.container {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: all 1s ease;
+  border-bottom: 2px solid $color-main;
+
+  .wrapper {
+    padding: 0px 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-dark;
+
+    .left {
+      display: flex;
+      animation: zoomIn 3s ease-in-out forwards;
+
+      .contact {
+        display: flex;
+        align-items: center;
+        margin-right: 70px;
+        margin-top: 15px;
+      }
+
+      .icon {
+        color: $color-red-one;
+        margin-right: 10px;
+      }
+
+      a {
+        font-weight: 600;
+        font-size: 18px;
+        text-decoration: none;
+        color: $color-main;
+      }
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .right {
+      color: $color-main;
+
+      .hamburger {
+        width: 30px;
+        height: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+
+        span {
+          width: 100%;
+          height: 3px;
+          transform-origin: left;
+          transition: all 1s ease;
+          background-color: $color-main;
+        }
+      }
+    }
+  }
+
+  &.active {
+    background-color: $color-main;
+    border-bottom: 2px solid $color-dark;
+
+    .wrapper {
+      background-color: $color-main;
+
+      .left {
+        background-color: $color-main;
+      }
+
+      .contact {
+        background-color: $color-main;
+
+        .icon {
+          background-color: $color-main;
+        }
+
+        a {
+          background-color: $color-main;
+          color: $color-dark;
+        }
+      }
+
+      .right {
+        .hamburger {
+          background-color: $color-main;
+
+          span {
+            &:first-child {
+              background-color: $color-red-one;
+              transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+              opacity: 0;
+            }
+
+            &:last-child {
+              background-color: $color-red-one;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media queries

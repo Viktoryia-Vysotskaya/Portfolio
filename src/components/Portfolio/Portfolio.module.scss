@@ -1,0 +1,234 @@
+@import "../../styles/styles.scss";
+
+.portfolio {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    flex-direction: column;
+
+    h1 {
+      font-size: 46px;
+      text-shadow: 2px 2px 4px $color-red-one;
+    }
+
+    .categories {
+      display: flex;
+      margin-top: 30px;
+      padding: 0px;
+    }
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 50px;
+    height: 100%;
+
+    .project {
+      flex: 0 0 370px;
+      margin: 20px;
+      background-color: $color-main;
+      box-shadow: 5px 5px 15px -2px $color-red-one;
+      position: relative;
+      border-right: 2px solid $color-main;
+      border-bottom: 2px solid $color-main;
+      border-top: 2px solid $color-main;
+      border-radius: 5px;
+      transition: all 0.5s ease;
+      margin-top: 40px;
+      margin-right: 20px;
+      margin-bottom: 40px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .image {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-red-one;
+        font-weight: bold;
+        cursor: pointer;
+
+        img {
+          object-fit: cover;
+          object-position: top;
+          width: 100%;
+          height: 200px;
+          border-bottom: 2px solid $color-red-one;
+        }
+
+        p {
+          position: absolute;
+          display: none;
+          background-color: $color-dark;
+        }
+
+        &:hover {
+          background-color: $color-dark;
+
+          img {
+            opacity: 0.3;
+            z-index: 0;
+          }
+
+          p {
+            display: block;
+          }
+        }
+      }
+
+      .content {
+        height: 350px;
+      }
+
+      h3 {
+        padding: 15px 10px;
+        text-align: right;
+        color: $color-red-one;
+      }
+
+      p {
+        padding: 5px 10px;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      padding: 5px;
+      margin-top: 5px;
+      flex-wrap: wrap;
+      font-size: 10px;
+      font-weight: 600;
+
+      .html_button,
+      .css_sass_button,
+      .javascript_button,
+      .typescript_button,
+      .nestJS_button,
+      .react_button,
+      .express_button,
+      .mongo_button,
+      .prisma_button,
+      .bootstrap_button {
+        padding: 5px;
+        margin-right: 5px;
+        border-radius: 5px;
+        border: 1px solid $color-main;
+      }
+
+      .html_button {
+        background-color: $color-orange;
+        color: $color-main;
+      }
+
+      .css_sass_button {
+        background-color: $color-pink;
+        color: $color-main;
+      }
+
+      .javascript_button {
+        background-color: $color-yellow;
+        color: $color-grey-two;
+      }
+
+      .typescript_button {
+        background-color: $color-blue-one;
+        color: $color-grey-two;
+      }
+
+      .nestJS_button {
+        background-color: $color-red-three;
+        color: $color-grey-two;
+      }
+
+      .react_button {
+        background-color: $color-blue-two;
+        color: $color-main;
+      }
+
+      .express_button {
+        background-color: $color-dark;
+        color: $color-main;
+      }
+
+      .mongo_button {
+        background-color: $color-green-one;
+        color: $color-main;
+      }
+
+      .prisma_button {
+        background-color: $color-green-three;
+        color: $color-main;
+      }
+
+      .bootstrap_button {
+        background-color: $color-violet;
+        color: $color-main;
+      }
+    }
+
+    .projectCreation,
+    .projectOverview {
+      color: $color-red-one;
+    }
+
+    .summary {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      margin: 10px;
+      justify-content: space-between;
+
+      .button {
+        display: flex;
+        background-color: $color-dark;
+        padding: 5px;
+        border-radius: 5px;
+        color: $color-main;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 5px;
+        border: 1px solid $color-red-one;
+
+        &:hover {
+          color: $color-light;
+        }
+      }
+    }
+  }
+
+  .ribbon {
+    width: 120px;
+    height: 14px;
+    background: linear-gradient(to left, $color-red-one, $color-main);
+    color: $color-dark;
+    position: absolute;
+    bottom: 70px;
+    right: -55px;
+    transform: rotate(90deg);
+    font-size: 12px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// Media queries
+

@@ -1,0 +1,201 @@
+@import "../../styles/styles.scss";
+
+.contact {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    flex-direction: column;
+
+    h1 {
+      font-size: 46px;
+      text-shadow: 2px 2px 4px $color-red-one;
+    }
+  }
+
+  .wrapper {
+    padding: 10px 50px;
+    margin: 0;
+    display: flex;
+
+    .left {
+      flex: 2;
+      margin-top: 100px;
+      padding: 10px 50px;
+
+      .left_wrapper {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+
+        .contact_box {
+          background-color: $color-dark;
+          height: 150px;
+          width: 100%;
+          display: flex;
+          justify-content: left;
+          align-items: left;
+          color: $color-main;
+
+          .icon {
+            background-color: $color-red-one;
+            height: 20px;
+            width: 20px;
+            padding: 10px;
+            border-radius: 50%;
+            margin-right: 20px;
+            box-shadow: 2px 2px 4px $color-main;
+            transition: transform 0.3s ease;
+
+            &:hover {
+              transform: scale(0.8);
+            }
+          }
+
+          h1 {
+            font-size: 22px;
+            padding-bottom: 10px;
+            color: $color-red-one;
+          }
+
+          a {
+            text-decoration: none;
+            color: $color-main;
+            cursor: pointer;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .right {
+      flex: 2;
+      margin-top: 60px;
+      padding: 10px 50px;
+
+      form {
+        display: flex;
+        justify-content: right;
+        align-items: end;
+        flex-direction: column;
+        border-right: 2px solid $color-red-one;
+        border-bottom: 2px solid $color-red-one;
+        box-shadow: 3px 3px 10px -2px $color-main;
+        width: 500px;
+        border-radius: 5px;
+
+        fieldset {
+          width: 100%;
+
+          .contactForm {
+            color: $color-red-one;
+            font-size: 18px;
+            position: absolute;
+            top: 205px;
+            right: 121px;
+          }
+
+          .form_field {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+
+            label {
+              font-size: 0;
+            }
+
+            input {
+              width: 90%;
+              width: 370px;
+              height: 40px;
+              padding: 0px 10px;
+              font-size: 16px;
+              border: 2px solid $color-light;
+              color: $color-main;
+            }
+
+            textarea {
+              border: 2px solid $color-light;
+              width: 90%;
+              width: 370px;
+              padding: 15px 10px;
+              height: 100px;
+              color: $color-main;
+              font-size: 16px;
+            }
+          }
+
+          .buttonContainer {
+            display: flex;
+            justify-content: center;
+          }
+
+          button {
+            border: none;
+            background-color: $color-red-one;
+            border-radius: 5px;
+            color: $color-main;
+            font-size: 16px;
+            padding: 10px 40px;
+            cursor: pointer;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .success {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 200px;
+        color: $color-main;
+        transition: all 1s ease-out;
+        margin-top: 40px;
+
+        .icon {
+          height: 40px;
+          width: 40px;
+          color: $color-red-one;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+        h1 {
+          font-size: 22px;
+        }
+
+        span {
+          margin-top: 20px;
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .ribbon {
+    width: 120px;
+    height: 14px;
+    background: linear-gradient(to left, $color-red-one, $color-main);
+    color: $color-dark;
+    position: absolute;
+    bottom: 70px;
+    right: -55px;
+    transform: rotate(90deg);
+    font-size: 12px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// Media queries
+

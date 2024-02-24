@@ -1,0 +1,17 @@
+@import "../../styles/styles.scss";
+
+.item {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 30px;
+
+  &.active {
+    background-color: $color-red-one;
+    color: $color-main;
+  }
+}
+
+// Media queries

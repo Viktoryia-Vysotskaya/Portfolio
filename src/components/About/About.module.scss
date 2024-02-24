@@ -1,0 +1,200 @@
+@import "../../styles/styles.scss";
+
+.about {
+  position: relative;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .wrapper {
+    display: flex;
+    padding: 10px 50px;
+    height: 100%;
+
+    .left,
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .typography {
+      font-size: 20px;
+      padding-bottom: 15px;
+      text-shadow: 4px 4px 6px $color-red-one;
+
+      .typographyIcon {
+        color: $color-red-one;
+        padding-right: 10px;
+      }
+
+      .animateHeart {
+        animation: heartbeat 0.9s infinite alternate;
+      }
+
+      @keyframes heartbeat {
+        from {
+          transform: scale(0.8);
+        }
+        to {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .right {
+      text-align: right;
+      .lead {
+        padding-bottom: 10px;
+        margin-right: 10px;
+
+        .skillsIcon,
+        .verifiedIcon {
+          color: $color-green-two;
+        }
+      }
+
+      .body1 {
+        font-size: 18px;
+        margin-right: 10px;
+      }
+
+      h3 {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        scrollbar-width: none; // for firefox;
+        &::-webkit-scrollbar {
+          display: none; // for safari, mozilla, etc;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: $color-red-one;
+
+        &:hover {
+          text-decoration: underline;
+          color: $color-main;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+      }
+
+      .icon {
+        height: 20px;
+        width: 20px;
+        padding-right: 5px;
+        color: $color-red-one;
+      }
+
+      .badge {
+        width: 75px;
+        height: 25px;
+        margin-right: 5px;
+        transition: transform 0.8s ease;
+        border-radius: 5px;
+        border: 1px solid $color-main;
+
+
+        &:hover {
+          box-shadow: 2px 4px 6px $color-main;
+          transform: scale(0.9);
+        }
+      }
+    }
+
+    .buttons {
+      margin: 10px;
+      display: flex;
+      height: 50px;
+      cursor: pointer;
+
+      .button,
+      .button_alt {
+        border: solid 1px $color-main;
+        display: flex;
+        flex: 4;
+        justify-content: center;
+        align-items: center;
+        color: $color-main;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        border-radius: 5px;
+
+        &:hover {
+          transform: scale(0.9);
+          border-color: $color-red-one;
+        }
+
+        span {
+          font-size: 12px;
+          font-weight: 600;
+          width: auto;
+        }
+
+        &:hover {
+          color: $color-red-one;
+          text-decoration: none;
+        }
+      }
+
+      .button_alt {
+        span {
+          color: $color-main;
+        }
+        .separator {
+          margin-left: 2px;
+          font-size: 14px;
+          color: $color-main;
+        }
+
+        .languages {
+          display: flex;
+
+          a {
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            color: $color-main;
+            padding-left: 5px;
+
+            &:hover {
+              color: $color-red-one;
+            }
+
+            &:hover span {
+              color: $color-main;
+            }
+
+            &:hover .separator {
+              color: $color-main;
+            }
+          }
+        }
+      }
+    }
+
+    .ribbon {
+      width: 120px;
+      height: 14px;
+      display: flex;
+      position: absolute;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to left, $color-red-one, $color-main);
+      color: $color-dark;
+      bottom: 70px;
+      right: -55px;
+      transform: rotate(90deg);
+      font-size: 12px;
+    }
+  }
+}
+
+// Media queries
