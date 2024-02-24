@@ -207,6 +207,7 @@ export const portfolio = [
     details:
       "Online portfolio with seamless scrolling: discover me, my skills, and projects - all in one swift scroll.",
     img: "/images/portfolio/Portfolio.png",
+    link: "https://portfolio-viktoryiavysots.replit.app",
     github: "https://github.com/Viktoryia-Vysotskaya/Portfolio",
   },
 ];

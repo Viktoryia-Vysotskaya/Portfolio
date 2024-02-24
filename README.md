@@ -1,3 +1,30 @@
+🌟 PROJECT "PORTFOLIO"
+
+📂 An online Portfolio containing detailed information about me, my professional skills, and completed projects. Here, every visitor has the opportunity to explore my work and learn more about my experience and competencies.
+
+
+💻 Live demo: https://portfolio-viktoryiavysots.replit.app
+
+(!) Free hosting so might take a while to load for first time.
+
+
+👀 Screenshots:
+
+![Alt Text](./public/images/portfolio/Portfolio.png)
+
+
+✉ Contact:
+
+Created by Viktoryia Vysotskaya
+
+➱ radevich.vika2014@gmail.com
+
+➱ https://www.linkedin.com/in/viktoryia-vysotskaya
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
