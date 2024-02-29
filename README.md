@@ -3,7 +3,7 @@
 📂 An online Portfolio containing detailed information about me, my professional skills, and completed projects. Here, every visitor has the opportunity to explore my work and learn more about my experience and competencies.
 
 
-💻 Live demo: https://portfolio-viktoryiavysots.replit.app
+💻 Live demo: https://portfolio-tau-gilt-44.vercel.app
 
 (!) Free hosting so might take a while to load for first time.
 
