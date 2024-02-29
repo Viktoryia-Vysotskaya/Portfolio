@@ -97,7 +97,7 @@ const Contact = () => {
             </form>
           )}
         </div>
-        <div className={styles.ribbon}>Viktoryia Vysotskaya</div> 
+        <div className={styles.ribbon}>Viktoryia Vysotskaya</div>
       </div>
     </section>
   );

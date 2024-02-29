@@ -187,4 +187,62 @@
 
 // Media queries
 
+@media (max-width: 1224px) {
+  .info {
+    min-height: 80vh;
 
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cell {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .ribbon {
+        font-size: 8px;
+        height: 8px;
+        width: 84px;
+        right: -39px;
+        bottom: 56px;
+      }
+    }
+
+    .foto {
+      width: 50%;
+      margin-top: 40px;
+    }
+
+    .textContainer {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .text {
+      font-size: 14px;
+      word-wrap: break-word;
+      max-width: 100%;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    .buttonsContainer {
+      margin-top: 0;
+
+      .buttons {
+        width: 170px;
+        height: 30px;
+        margin-top: 20px;
+
+        .primaryButton,
+        .secondaryButton {
+          font-size: 12px;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+}

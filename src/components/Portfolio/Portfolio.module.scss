@@ -232,3 +232,35 @@
 
 // Media queries
 
+@media (max-width: 1224px) {
+  .portfolio {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+
+    .categories {
+      flex-direction: column;
+    }
+
+    .list {
+      width: 90%;
+
+      .project {
+        max-width: 100%;
+
+        .content {
+          height: 400px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .ribbon {
+      font-size: 8px;
+      height: 8px;
+      width: 84px;
+      right: -39px;
+      bottom: 56px;
+    }
+  }
+}
