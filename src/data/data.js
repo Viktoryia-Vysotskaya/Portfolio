@@ -145,6 +145,7 @@ export const portfolio = [
     details:
       "Team project of an online furniture store. Led by an experienced project manager using the JIRA methodology. Implementation of Git workflow, including thorough code review and seamless code merging.",
     img: "/images/portfolio/Bazar.png",
+    link: "https://team-project-xi.vercel.app",
     github: "https://github.com/Viktoryia-Vysotskaya/Team-Project",
   },
 
