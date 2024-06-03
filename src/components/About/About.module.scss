@@ -194,6 +194,16 @@
       font-size: 12px;
     }
   }
+  .counterImage {
+    width: auto;
+    height: 15px;
+  }
+
+  .counterContainer {
+    position: absolute;
+    left: 0px;
+    bottom: 13px;
+  }
 }
 
 // Media queries

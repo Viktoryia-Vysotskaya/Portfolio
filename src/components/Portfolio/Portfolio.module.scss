@@ -228,6 +228,17 @@
     align-items: center;
     justify-content: center;
   }
+
+  .counterImage {
+    width: auto;
+    height: 15px;
+  }
+
+  .counterContainer {
+    position: absolute;
+    left: 0px;
+    bottom: 13px;
+  }
 }
 
 // Media queries

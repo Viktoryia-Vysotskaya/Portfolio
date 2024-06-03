@@ -368,6 +368,17 @@ const About = () => {
         </div>
         <div className={styles.ribbon}>Viktoryia Vysotskaya</div>
       </div>
+      <div className={styles.counterContainer}>
+        <a href="https://www.hitwebcounter.com" target="_blank">
+          <img
+            src="https://hitwebcounter.com/counter/counter.php?page=13840481&style=0009&nbdigits=5&type=page&initCount=0"
+            title="Counter Widget"
+            Alt="Visit counter For Websites"
+            border="0"
+            className={styles.counterImage}
+          />
+        </a>
+      </div>
     </section>
   );
 };
