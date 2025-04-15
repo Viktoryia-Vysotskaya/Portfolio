@@ -56,7 +56,7 @@ export const portfolio = [
     details:
       "A web page - an example of an external view for the portfolio of a company's work and its specialists. Designers can showcase their projects, provide information about their services, and share their skills and expertise.",
     img: "/images/portfolio/Brands.png",
-    link: "https://css-rwd-practice-module-2-viktoryiavysots.replit.app",
+    link: "https://css-rwd-practice-module-2.vercel.app",
     github: "https://github.com/Viktoryia-Vysotskaya/CSS-RWD-Practice-Module-2",
   },
   {
@@ -67,7 +67,7 @@ export const portfolio = [
     details:
       "An approximate web page for an online clothing store, providing users with a convenient interface for browsing and purchasing fashionable clothing.",
     img: "/images/portfolio/Harbinger.png",
-    link: "https://bootstrap-module-3-viktoryiavysots.replit.app",
+    link: "https://bootstrap-module-3.vercel.app",
     github: "https://github.com/Viktoryia-Vysotskaya/Bootstrap-Module-3",
   },
   {
@@ -78,7 +78,7 @@ export const portfolio = [
     details:
       "A simple web application created as an example of the visual appearance for an online store. The project was developed to demonstrate the design and functionality capabilities that can be implemented in online shopping platforms.",
     img: "/images/portfolio/LandingPage.png",
-    link: "https://landingpage-viktoryiavysots.replit.app",
+    link: "https://bootstrap-module-3-lzs2.vercel.app",
     github: "https://github.com/Viktoryia-Vysotskaya/Landing_page",
   },
   {
